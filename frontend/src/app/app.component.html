@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Employee Search</h1>
+
+  <app-search-panel (search)="handleSearch($event)"></app-search-panel>
+
+  <app-data-table [data]="employees"></app-data-table>
+</div>

@@ -1,0 +1,13 @@
+<!-- <p>search-panel works!</p> -->
+<form [formGroup]="form" class="search-panel" (ngSubmit)="onSearch()">
+  <div class="inputs">
+    <input formControlName="firstName" placeholder="First Name" />
+    <input formControlName="lastName" placeholder="Last Name" />
+    <input formControlName="phoneNumber" placeholder="Phone Number" />
+    <input formControlName="position" placeholder="Position" />
+  </div>
+  <div class="actions">
+    <button type="submit">Search</button>
+    <button type="button" (click)="onReset()">Reset</button>
+  </div>
+</form>
